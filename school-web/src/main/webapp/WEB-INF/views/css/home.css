@@ -1,0 +1,163 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url("../images/home.jpg");
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;;
+}
+
+.loginbox {
+	width: 320px;
+	height: 420px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+
+.avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+h1 {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.loginbox p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.loginbox input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+	outline: none;
+	border: none;
+	height: 40px;
+	background: #A0522D;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+	bor
+}
+
+.loginbox input[type="submit"]:hover {
+	cursor: pointer;
+	background: #b5651d;
+	color: #000;
+}
+
+.loginbox a {
+	text-decoration: none;
+	color: darkgrey;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.loginbox a:hover {
+	color: #b5651d;
+}
+
+.logo {
+	width: 90px;
+	height: 70px;
+	align-content: left;
+}
+
+.logo img {
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+.menu-bar {
+	background: rgb(160, 82, 45);
+	text-align: left;
+	height: 90px;
+}
+
+.menu-bar ul {
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+
+.menu-bar ul li {
+	text-align: center;
+	width: 123px;
+	margin: 10px;
+	padding: 12px;
+}
+
+.menu-bar ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu-bar ul li:hover {
+	background: #8B4513;
+	border-radius: 6px;
+}
+
+.sub-menu-1 {
+	display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+	display: block;
+	position: absolute;
+	background: #D2691E	;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+	display: block;
+	margin: 10px;
+	
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+	border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+	color: #000;
+}
+

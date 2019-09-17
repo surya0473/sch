@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+
+	<definition name="layout.basic" template="/WEB-INF/views/tiles/layout/basic.jsp">
+		<put-attribute name="title" value="Your School" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/layout/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/layout/footer.jsp" />
+	</definition>
+	
+	<!-- Pages -->	
+	
+	<definition name="site.homepage" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />
+	</definition>
+	
+	<definition name="site.aboutus" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/views/pages/aboutus.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="site.contactus" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/views/pages/contactus.jsp" />
+	</definition>
+	
+	<definition name="site.clients" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/views/pages/clients.jsp" />
+	</definition>
+	
+	
+	<definition name="site.services" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/views/pages/services.jsp" />
+	</definition>
+	
+	<definition name="site.investors" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/views/pages/investors.jsp" />
+	</definition>
+	
+	<definition name="site.pricing" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/views/pages/pricing.jsp" />
+	</definition>
+	
+	<definition name="site.login" extends="layout.basic">
+		<put-attribute name="body" value="/WEB-INF/views/pages/login.jsp" />
+	</definition>
+	
+</tiles-definitions>
