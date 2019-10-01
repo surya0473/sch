@@ -9,11 +9,11 @@
 	<div class="loginbox">
 		<img class="avatar" src="../images/avathar.png">
 		<h1>Login Here</h1>
-		<form action="">
+		<form action="/applogin" method="POST" name="UserReq">
 			<p>Username</p>
-			<input type="text" placeholder="Enter Username">
+			<input type="text" name="username" placeholder="Enter Username">
 			<p>Password</p>
-			<input type="password" placeholder="Enter Password"> <input
+			<input type="password" name="password" placeholder="Enter Password"> <input
 				type="submit" class="" value="Login"> <a href="#">Forgot
 				your password.</a><br> <a href="#">Don't have an account?</a>
 		</form>

@@ -2,6 +2,7 @@ package com.sv;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesView;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
@@ -20,6 +21,11 @@ public class AppConfig {
 		TilesConfigurer tiles = new TilesConfigurer();
 		tiles.setDefinitions(new String[] { "/WEB-INF/views/tiles/tiles.xml" });
 		return tiles;
+	}
+
+	@Bean
+	public RestTemplate getRestTemplate() {
+		return new RestTemplate();
 	}
 
 }

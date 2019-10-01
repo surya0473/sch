@@ -25,43 +25,50 @@ public class CommonController {
 	}
 
 	@RequestMapping(value = "/aboutus", method = RequestMethod.GET)
-	public String aboutUs() {
+	public String aboutUs(HttpServletRequest request) {
+		service.saveRequest(request);
 		logger.info("Lanched aboutus");
 		return "site.aboutus";
 	}
 
 	@RequestMapping(value = "/contactus", method = RequestMethod.GET)
-	public String contactUs() {
+	public String contactUs(HttpServletRequest request) {
+		service.saveRequest(request);
 		logger.info("Lanched contactus");
 		return "site.contactus";
 	}
 	
 	@RequestMapping(value = "/clients", method = RequestMethod.GET)
-	public String clients() {
+	public String clients(HttpServletRequest request) {
+		service.saveRequest(request);
 		logger.info("Lanched clients");
 		return "site.clients";
 	}
 	
 	@RequestMapping(value = "/services", method = RequestMethod.GET)
-	public String services() {
+	public String services(HttpServletRequest request) {
+		service.saveRequest(request);
 		logger.info("Lanched services");
 		return "site.services";
 	}
 	
 	@RequestMapping(value = "/investors", method = RequestMethod.GET)
-	public String investors() {
+	public String investors(HttpServletRequest request) {
+		service.saveRequest(request);
 		logger.info("Lanched investors");
 		return "site.investors";
 	}
 	
 	@RequestMapping(value = "/pricing", method = RequestMethod.GET)
-	public String pricing() {
+	public String pricing(HttpServletRequest request) {
+		service.saveRequest(request);
 		logger.info("Lanched pricing");
 		return "site.pricing";
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login() {
+	public String login(HttpServletRequest request) {
+		service.saveRequest(request);
 		logger.info("Lanched login");
 		return "site.login";
 	}
